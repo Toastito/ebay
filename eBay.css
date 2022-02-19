@@ -1,0 +1,154 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1rem !important;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+header {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ebebeb;
+}
+
+h1 {
+    margin: 0 0 0 1%;
+    color: black;
+}
+
+main {
+    background-color: #fbfbfd;
+    color: black;
+    display: flex;
+    height: 100%;
+    flex-flow: row wrap;
+}
+
+section {
+    background-color: white;
+    flex: 1 0 0px;
+    height: 100%;
+    margin: 1%;
+    border-radius: 6px;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.title {
+    padding: 2% 0 2% 0;
+    display: flex;
+    align-items: center;
+    border-radius: 6px 6px 0 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+h2 {
+    text-align: left;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    margin: 0 0 0 2%;
+}
+
+h3 {
+    margin: 2%;
+    padding: 0;
+}
+
+p {
+    margin: 2%;
+    padding: 0;
+}
+
+p:last-child {
+    margin-bottom: 5%;
+}
+
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 2%;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #ebebeb;
+}
+
+small {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 850px) {
+    main {
+        flex-direction: column;
+    }
+    
+    section {
+        height: 100%;
+        margin: 1%;
+    }
+    
+    section:first-child {
+        margin: 2% 1% 1% 1%;
+    }
+
+    section:last-child {
+        margin: 1% 1% 2% 1%;
+    }
+}
+
+/* Playing around with dark mode for app */
+
+/* @media (prefers-color-scheme: dark) {
+    h1,h2,h3,h4 {
+        color: #bdc1c6;
+    }
+    
+    body {
+        background-color: #202124;
+        color: #bdc1c6;
+    }
+    main {
+        background-color: #202124;
+        color: #bdc1c6;
+    }
+    
+    header {
+        background-color: #202124;
+        border-bottom: 2px solid #303134;
+    }
+    
+    section {
+        background-color: #303134;
+        color: #bdc1c6;
+    }
+    
+    .title {
+        border-bottom: 1px solid #202124;
+    }
+    
+    footer {
+        border-top: 1px solid #303134;
+        background-color: #202124;
+        color: #bdc1c6;
+    }
+} */
