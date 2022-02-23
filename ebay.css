@@ -68,14 +68,18 @@ ul {
     margin-left: 1em;
 }
 
+.sub-list {
+    list-style-type: none;
+}
+
 li {
     padding-left: 0.5em;
 }
 
 .qty-1::marker, .qty-2::marker{
-    list-style-type: none;
     font-weight: bold;
 }
+
 .qty-1::marker {
     content: '1' !important;
 }
