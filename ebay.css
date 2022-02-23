@@ -73,14 +73,15 @@ li {
 }
 
 .qty-1::marker, .qty-2::marker{
+    list-style-type: none;
     font-weight: bold;
 }
-.qty-1 {
-    list-style-type: '1';
+.qty-1::marker {
+    content: '1';
 }
 
-.qty-2 {
-    list-style-type: '2';
+.qty-2::marker {
+    content: '2';
 }
 
 .bold {
