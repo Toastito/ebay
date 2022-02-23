@@ -76,11 +76,11 @@ li {
     font-weight: bold;
 }
 
-.qty-1::marker {
+.sub-list .qty-1::marker {
     content: '1' !important;
 }
 
-.qty-2::marker {
+.sub-list .qty-2::marker {
     content: '2' !important;
 }
 
