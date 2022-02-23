@@ -80,11 +80,11 @@ li {
     font-weight: bold;
 }
 
-.qty-1::marker {
+.qty-1::before {
     content: '1' !important;
 }
 
-.qty-2::marker {
+.qty-2::before {
     content: '2' !important;
 }
 
