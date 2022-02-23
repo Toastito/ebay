@@ -72,16 +72,20 @@ li {
     padding-left: 0.5em;
 }
 
+.sub-list {
+    list-style: none;
+}
+
 .qty-1::marker, .qty-2::marker{
     font-weight: bold;
 }
 
 .sub-list .qty-1::marker {
-    content: '1' !important;
+    content: '1';
 }
 
 .sub-list .qty-2::marker {
-    content: '2' !important;
+    content: '2';
 }
 
 .bold {
