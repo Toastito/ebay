@@ -77,11 +77,11 @@ li {
     font-weight: bold;
 }
 .qty-1::marker {
-    content: '1';
+    content: '1' !important;
 }
 
 .qty-2::marker {
-    content: '2';
+    content: '2' !important;
 }
 
 .bold {
