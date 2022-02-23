@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --background-color: #f5f5f7;
+    --section-color: white;
+    --accent-color: #e0e0e0;
+
+    --tile-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --top-margin: 0.75em;
+}
+
 html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -16,19 +27,15 @@ html {
 }
 
 body {
-    font-family: 'Roboto Slab', sans-serif !important;
+    font-family: 'Roboto', sans-serif !important;
     font-size: 1rem !important;
     display: flex;
     flex-flow: column wrap;
 }
 
-h1 {
-    color: black;
-}
-
 main {
-    background-color: #fbfbfd;
-    color: black;
+    /* background-color: #fbfbfd; */
+    background-color: var(--background-color);
     height: 100%;
     display: flex;
     flex-flow: row;
@@ -36,47 +43,44 @@ main {
 
 section {
     flex: 1 0 0;
-    background-color: white;
+    background-color: var(--section-color);
     border-radius: 6px;
     height: 100%;
     margin: 1em;
     padding: 1em;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: var(--tile-shadow);
 }
 
 .title {
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--accent-color);
 }
 
 h2 {
-    margin-bottom: 2%;
-    text-align: left;
-    height: 100%;
-    max-height: 100%;
-    width: 100%;
+    margin-bottom: 0.25em;
 }
 
-h3 {
-    margin-top: 2%;
+h3, p, li {
+    margin-top: var(--top-margin);
 }
 
 ul {
-    display: block;
     list-style-position: outside;
-    text-align-last: left;
     margin-left: 1em;
 }
 
-p, li {
-    margin-top: 1em;
+li {
+    padding-left: 0.5em;
 }
 
+.qty-1::marker, .qty-2::marker{
+    font-weight: bold;
+}
 .qty-1::marker {
-    content: '1 - ';
+    content: '1';
 }
 
 .qty-2::marker {
-    content: '2 - ';
+    content: '2';
 }
 
 .bold {
@@ -88,19 +92,22 @@ p, li {
 }
 
 footer {
-    width: 100%;
-    margin: 0;
-    padding: 2%;
-    background-color: white;
-    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid #ebebeb;
+    padding: 1em;
+    border-top: 1px solid var(--accent-color);
 }
 
-small {
+.store {
+    display: block;
     font-size: 1rem;
+    padding-right: 0.5em;
+}
+
+.condition {
+    display: block;
+    padding-top: 1em;
 }
 
 @media only screen and (max-width: 850px) {
