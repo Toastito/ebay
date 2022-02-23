@@ -72,10 +72,6 @@ li {
     padding-left: 0.5em;
 }
 
-.sub-list {
-    list-style: none;
-}
-
 .qty-1::marker, .qty-2::marker{
     font-weight: bold;
 }
