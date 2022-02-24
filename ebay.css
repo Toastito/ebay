@@ -77,12 +77,12 @@ ul {
 }
 
 .qty {
-    grid-column: span 1;
+    grid-column: 1 / span 1;
     text-align: center;
 }
 
 .sub-item {
-    grid-column: span 13;
+    grid-column: 2 /span 13;
 }
 
 .bold {
