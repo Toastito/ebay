@@ -28,7 +28,6 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif !important;
-    font-size: 1rem !important;
     display: flex;
     flex-flow: column wrap;
 }
@@ -36,7 +35,6 @@ body {
 main {
     /* background-color: #fbfbfd; */
     background-color: var(--background-color);
-    height: 100%;
     display: flex;
     flex-flow: row;
 }
@@ -56,10 +54,11 @@ section {
 }
 
 h2 {
-    margin-bottom: 0.25em;
+    font-size: 1.625rem;
+    margin-bottom: 0.5em;
 }
 
-h3, p, li {
+h3, p, ul {
     margin-top: var(--top-margin);
 }
 
@@ -68,20 +67,24 @@ ul {
     margin-left: 1em;
 }
 
-li {
-    padding-left: 0.5em;
+.sub-list {
+    margin: 0;
+    padding: 0.5em 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr) ;
+    grid-gap: 0.25em;
 }
 
-.qty-1::marker, .qty-2::marker{
-    font-weight: bold;
+
+
+.qty {
+    grid-column: span 1;
+    text-align: center;
 }
 
-.sub-list .qty-1::marker {
-    content: '1';
-}
-
-.sub-list .qty-2::marker {
-    content: '2';
+.sub-item {
+    grid-column: span 13;
 }
 
 .bold {
