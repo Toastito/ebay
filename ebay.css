@@ -73,10 +73,8 @@ ul {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(14, 1fr) ;
-    grid-gap: 0.25em;
+    gap: var(--top-margin) 0.25em;
 }
-
-
 
 .qty {
     grid-column: span 1;
