@@ -11,63 +11,107 @@
 </head>
 <body>
     <main>
-        <section aria-labelledby="product-description">
-            <div class="title">
+        <article class="card" aria-labelledby="product-description">
+            <header class="card-header">
                 <h2 id="product-description">Product Description</h2>
-            </div>
-            <h3>Animal Crossing Nintendo Switch Bundle</h3>
-            <p>This is a listing for a used Nintendo Switch Console Bundle</p>
-            <p class="bold">Items Included in the Bundle</p>
-            <ul>
-                <li class="bold item">Console*:
-                    <ul class="normal sub-list">
-                        <div class="bold qty">1</div><li class="sub-item">Crossing Themed Nintendo Switch Console</li>
-                        <div class="bold qty">1</div><li class="sub-item">Crossing Themed Docking Station for Switch Console</li>
-                        <div class="bold qty">1</div><li class="sub-item">HDMI Cable</li>
-                        <div class="bold qty">1</div><li class="sub-item">Nintendo Switch AC Adapter (Wall Plug)</li>
-                    </ul>
-                </li>
-                <li class="bold item">Controllers:
-                    <ul class="normal sub-list">
-                        <div class="bold qty">1</div><li class="sub-item">Pair of Animal Crossing Themed Joycons (1 Left and 1 Right Joycon)</li>
-                        <div class="bold qty">1</div><li class="sub-item">Pair of Gray Joycons (1 Left and 1 Right Joycon)</li>
-                        <div class="bold qty">2</div><li class="sub-item">Wireless Pro Controllers**</li>
-                    </ul>
-                </li>
-                <li class="bold item">Games:
-                    <ul class="normal sub-list">
-                        <div class="bold qty">1</div><li class="sub-item">Smash Bros Ultimate</li>
-                        <div class="bold qty">1</div><li class="sub-item">Party Superstars</li>
-                        <div class="bold qty">1</div><li class="sub-item">Kart 8 Deluxe</li>
-                    </ul>
-                </li>
-            </ul>
-            <small class="condition">* Joycon Comfort Grip Not Included.</small>
-            <small class="condition">** Charging cables for the YCCTEAM controllers are not included, but they can be easily charged with any standard USB-C cable.</small>
-        </section>
-        <section aria-labelledby="delivery-method">
-            <div class="title">
-                <h2 id="delivery-method">Delivery Method</h2>
-            </div>
-            <h3>USPS - Priority Mail</h3>
-            <p>Console will be shipped inside a secure box.</p>
-            <p>All items have been wrapped in protected bubble wrap for added protection</p>
-            <p>Will ship within 1-2 business days.</p>
-            <p>Free Shipping</p>  
-            <p class="bold">Returns Not Accepted</p>
-        </section>
-        <section aria-labelledby="contact-info">
-            <div class="title">
+            </header>
+            <section class="card-body" aria-labelledby="product-name">
+                <h3 id="product-name">Animal Crossing Nintendo Switch Bundle</h3>
+                <p>This is a listing for a used Nintendo Switch Console Bundle</p>
+                <p class="bold">Items Included in the Bundle</p>
+                <ul>
+                    <li class="bold item">Console*:
+                        <table class="sub-items normal">
+                            <tbody>
+                                <tr class="line-item">
+                                    <td class="qty">1</td>
+                                    <td class="product">Animal Crossing Themed Nintendo Switch Console</td>
+                                </tr>
+                                <tr class="line-item">
+                                    <td class="qty">1</td>
+                                    <td class="product">Animal Crossing Themed Docking Station for Switch Console</td>
+                                </tr>
+                                <tr class="line-item">
+                                    <td class="qty">1</td>
+                                    <td class="product">HDMI Cable</td>
+                                </tr>
+                                <tr class="line-item">
+                                    <td class="qty">1</td>
+                                    <td class="product">Nintendo Switch AC Adapter (Wall Plug)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li class="bold item">Controllers:
+                        <table class="sub-items normal">
+                            <tbody>
+                                <tr class="line-item">
+                                    <td class="qty">1</td>
+                                    <td class="product">Pair of Animal Crossing Themed Joycons (1 Left and 1 Right Joycon)</td>
+                                </tr>
+                                <tr class="line-item">
+                                    <td class="qty">1</td>
+                                    <td class="product">Pair of Gray Joycons (1 Left and 1 Right Joycon)</td>
+                                </tr>
+                                <tr class="line-item">
+                                    <td class="qty">2</td>
+                                    <td class="product">YCC Team Wireless Pro Controllers**</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li class="bold item">Games:
+                        <table class="sub-items normal">
+                            <tbody>
+                                <tr class="line-item">
+                                    <td class="qty">1</td>
+                                    <td class="product">Smash Bros Ultimate</td>
+                                </tr>
+                                <tr class="line-item">
+                                    <td class="qty">1</td>
+                                    <td class="product">Party Superstars</td>
+                                </tr>
+                                <tr class="line-item">
+                                    <td class="qty">1</td>
+                                    <td class="product">Kart 8 Deluxe</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+                <footer class="conditions">
+                    <p>* Joycon Comfort Grip Not Included.</p>
+                    <p>** Charging cables for the YCCTEAM controllers are not included, but they can be easily charged with any standard USB-C cable.</p>
+                </footer>
+            </section>
+        </article>
+        <article class="card" aria-labelledby="delivery-method">
+            <header class="card-header">
+                <h2 id="delivery-info">Delivery Information</h2>
+            </header>
+            <section class="card-body" aria-labelledby="delivery-method">
+                <h3 id="delivery-method">USPS - Priority Mail</h3>
+                <p>Console will be shipped inside a secure box.</p>
+                <p>All items have been wrapped in protected bubble wrap for added protection</p>
+                <p>Will ship within 1-2 business days.</p>
+                <p>Free Shipping</p>  
+                <p class="bold">Returns Not Accepted</p>
+            </section> 
+        </article>
+        <article class="card" aria-labelledby="contact-info">
+            <header class="card-header">
                 <h2 id="contact-info">Contact Info</h2>
-            </div>
-            <h3>Questions or Concerns?</h3>
-            <p>If you have any questions or concerns regarding the listing or an order please feel free to reach out through <a href="https://mesg.ebay.com/mesgweb/ViewMessages/0" target="_blank">eBay messages</a>.</p>
-            <p>I will respond as soon as I can.</p>
-            <p>Thank you for visiting my ebay store!</p>
-        </section>
+            </header>
+            <section class="card-body" aria-labelledby="questions-concerns">
+                <h3 id="questions-concerns">Questions or Concerns?</h3>
+                <p>If you have any questions or concerns regarding the listing or an order please feel free to reach out through <a href="https://mesg.ebay.com/mesgweb/ViewMessages/0" target="_blank">eBay messages</a>.</p>
+                <p>I will respond as soon as I can.</p>
+                <p>Thank you for visiting my ebay store!</p>
+            </section>
+        </article>
     </main>
-    <footer>
-        <small class="store">toastito ebay Store</small><i class="fa-solid fa-shop"></i>
+    <footer id="store-brand">
+        <p class="store">toastito ebay Store<i class="fa-solid fa-shop"></i></p>
     </footer>
 </body>
 </html>
