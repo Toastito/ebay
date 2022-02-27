@@ -12,7 +12,9 @@
     
     --top-margin: 0.75em;
 
-    --fs-regular: 1em;
+    --fs-regular: 1rem;
+    --fs-heading: 1.625rem;
+    --fs-sub-heading: 1.25rem;
     --fs-small: 0.80rem;
 }
 
@@ -61,10 +63,11 @@ main {
 }
 
 h2 {
-    font-size: 1.625rem;
+    font-size: var(--fs-heading);
 }
 
 p, ul {
+    font-size: var(--fs-regular);
     margin-top: var(--top-margin);
 }
 
@@ -81,6 +84,7 @@ ul {
 
 table, tr, td {
     border-collapse: collapse;
+    font-size: var(--fs-regular);
 }
 
 /* Important to specify start location of grid components to make sure 
