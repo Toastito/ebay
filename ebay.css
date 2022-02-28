@@ -34,22 +34,36 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif !important;
-    display: flex;
-    flex-flow: column wrap;
 }
 
 main {
     background-color: var(--background-color);
-    display: flex;
-    flex-flow: row;
+    display: grid;
+    padding: var(--default-padding);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "product-section product-section"
+        "delivery-section contact-section";
+    gap: var(--default-padding);
+}
+
+#product-section {
+    grid-area: product-section;
+}
+
+#delivery-section {
+    grid-area: delivery-section;
+}
+
+#contact-section {
+    grid-area: contact-section;
 }
 
 .card {
-    flex: 1 0 0;
     background-color: var(--section-color);
     border-radius: 6px;
     height: 100%;
-    margin: 1em;
+    width: 100%;
     box-shadow: var(--tile-shadow);
 }
 
@@ -128,9 +142,21 @@ table {
     font-size: var(--fs-small);
 }
 
+@media only screen and (min-width: 1200px) {
+    main {
+        grid-template-areas: 
+            "product-section delivery-section"
+            "product-section contact-section";
+    }
+}
+
 @media only screen and (max-width: 850px) {
     main {
-        display: block;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "product-section"
+            "delivery-section"
+            "contact-section";
     }
 }
 
